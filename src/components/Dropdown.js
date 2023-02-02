@@ -17,8 +17,8 @@ export default function DropdownComp(props) {
                 let newContent = [{ value: "", text: format.displayName, disabled: true }];
                 for(const key in resp.data){
                     newContent.push({
-                        value: resp.data[key].name.toLowerCase(),
-                        text: resp.data[key].name});
+                        value: resp.data[key][`${format.responseSchema}`].toLowerCase(),
+                        text: resp.data[key][`${format.responseSchema}`]});
                 }
                 setDisplay(newContent);
             })

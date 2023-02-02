@@ -12,6 +12,6 @@
         "url": "https://wizard-world-api.herokuapp.com/Houses",
         "reqType": "GET",
         "auth": "al-jenkins",
-        "responseSchema": "name"
+        "responseSchema": "founder"
     }
 }
