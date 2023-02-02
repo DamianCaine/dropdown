@@ -1,0 +1,17 @@
+{
+    "format":{
+        "displayName": "Branching Strategy",
+        "type": "dropdown",
+        "defaultValue": "ravenclaw",
+        "editable": true,
+        "required": true,
+        "placeHolder": "Branching strategy",
+        "info": "Default branching strategy to be configured",
+        "width": "8",
+        "dataSource": "api",
+        "url": "https://wizard-world-api.herokuapp.com/Houses",
+        "reqType": "GET",
+        "auth": "al-jenkins",
+        "responseSchema": "name"
+    }
+}

@@ -1,0 +1,33 @@
+ - field: "branching_strategy"
+        displayname: "Branching Strategy"
+        type: "dropdown"
+        defaultValue: "gitflow"
+        editable: true
+        required: true
+        placeHolder: "Branching strategy"
+        info: "Default branching strategy to be configured"
+        width: "8"
+        dataSource: api
+        url: "sonar.com/api/v2/projects"
+        reqType: GET
+        auth: al-jenkins
+        responseSchema: name
+
+
+{
+    format:{
+        displayname: "Branching Strategy",
+        type: "dropdown",
+        defaultValue: "gitflow",
+        editable: true,
+        required: true,
+        placeHolder: "Branching strategy",
+        info: "Default branching strategy to be configured",
+        width: "8",
+        dataSource: api,
+        url: "sonar.com/api/v2/projects",
+        reqType: GET,
+        auth: al-jenkins,
+        responseSchema: name
+    }
+}
